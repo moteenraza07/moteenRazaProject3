@@ -1,10 +1,15 @@
 
 import './App.css';
+import Header from './components/Header';
+import ListOfCities from './components/ListOfCities';
+
 
 function App() {
   return (
-    <main>
-      <h1>Testing project 3</h1>
+    <main className='background'>
+      <Header />
+      <ListOfCities />
+      
     </main>
   );
 }
