@@ -1,7 +1,3 @@
-// import useState
-
-import {useState} from 'react';
-
 
 const CitySelection = ({handleSubmit, handleClick, cityName}) => {
     
@@ -10,12 +6,12 @@ const CitySelection = ({handleSubmit, handleClick, cityName}) => {
             // pass it the userSelection stae as an argument
         <form action="" onSubmit={handleSubmit}>
 
-        <label htmlFor="filtration">Show me the weather from the city selected ➡</label>
+        <label className='selectCity' htmlFor="filtration">Show me the weather from the city selected ➡</label>
             {/*in order to associate a label with an input, use the for and id attribute */}
             {/* in order for REact to know what  */}
 
             {/*1. listen for the 'change' event within the dropdown */}
-            <select name="filtration" id="filtration" onChange={handleClick} value = {cityName}>
+            <select className="dropDown" name="filtration" id="filtration" onChange={handleClick} value = {cityName}>
                 {/*1A pass in an onChange event handler */}
 
                 {/*2E. use the state for the dropdown to subsequently dictate the value of the element ( close the state loop - aka have the value of the dropdown be dictated by react)  */}
@@ -26,10 +22,13 @@ const CitySelection = ({handleSubmit, handleClick, cityName}) => {
                 <option value="Toronto">Toronto</option>
                 <option value="Brampton">Brampton</option>
                 <option value="Woodbridge">Woodbridge</option>
+                <option value="Barrie">Barrie</option>
+                <option value="Waterloo">Waterloo</option>
+
                 
             </select>
             
-            <button>Click to view the weather!</button>
+            <button className='button'>Click to view the weather!</button>
 
 
 

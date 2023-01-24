@@ -2,7 +2,7 @@ import DisplayInfo from './DisplayInfo';
 import CitySelection from './CitySelection';
 
 //1. import the useState and useEffect hooks from the react library
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 
@@ -77,7 +77,11 @@ const handleClick = (event) => {
     setCityName(city);
 
     callCity(city);
+    
+    
 }
+
+console.log(weatherInfo)
 
     return (
 

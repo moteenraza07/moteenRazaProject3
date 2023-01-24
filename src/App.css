@@ -39,8 +39,114 @@
 
 body {
   font-family: 'Helvetica';
-  background-color: lightskyblue;
-  color: #fff;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,238,245,1) 0%, rgba(0,212,255,1) 100%);
 }
 
 
+.header {
+  color: black;
+}
+
+
+
+
+/* CSS */
+.button {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 12px;
+  height: 28px;
+  width: 30%;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 50%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  left: 450px;
+  bottom: 25px;
+}
+
+.button:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 28px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button:hover:after {
+  transform: translate(0, 0);
+}
+
+.button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 40px;
+  }
+}
+
+.box {
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.dropDown {
+  color: black;
+  background-color: orange;
+  border-radius: 5%;
+  border:none;
+  height: 25px;
+}
+
+.city, .weather, .selectCity, .newWeather {
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.weather {
+  font-size: .9rem;  
+}
+
+.all-border{
+  border-left: solid 2px #fbb13c;
+  padding: 5px;
+}
+
+.newWeather {
+  font-size: 1rem;
+}
+
+.display {
+  color: #d81159;
+  text-align: center;
+  font-size: 1.1rem;
+
+}
