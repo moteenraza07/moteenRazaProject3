@@ -29,7 +29,7 @@ const ListOfCities = () => {
 const callCity = (city) => {
     axios(
         {
-            baseURL: 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete',
+            baseURL: 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete',
                 params: {
                     apikey: '5C7XkvLTaPsO5dFsQqLGb9Qffqwg114a',
                     q: city
@@ -51,7 +51,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
     axios(
         {
-            baseURL: `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityKey}`,
+            baseURL: `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityKey}`,
                 params: {
                     apikey: '5C7XkvLTaPsO5dFsQqLGb9Qffqwg114a'
                 
