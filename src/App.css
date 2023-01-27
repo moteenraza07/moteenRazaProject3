@@ -38,14 +38,16 @@
 }
 
 body {
-  font-family: 'Helvetica';
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,238,245,1) 0%, rgba(0,212,255,1) 100%);
+ background-image: url("./components/weatherOne.png");
+ background-repeat: no-repeat;
+ 
+
 }
 
 
 .header {
   color: black;
+  font-size: 2rem;
 }
 
 
@@ -61,10 +63,9 @@ body {
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 12px;
-  height: 28px;
-  width: 30%;
+  font-family:'Fjalla One', sans-serif; 
+  font-size: 1.5rem;
+  height: 48px;
   justify-content: center;
   line-height: 24px;
   max-width: 50%;
@@ -75,8 +76,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  left: 450px;
-  bottom: 25px;
+  left: 950px;
+  bottom: 45px;
 }
 
 .button:after {
@@ -84,7 +85,7 @@ body {
   border-radius: 8px;
   content: "";
   display: block;
-  height: 28px;
+  height: 48px;
   left: 0;
   width: 100%;
   position: absolute;
@@ -115,7 +116,9 @@ body {
 
 .box {
   display:grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 350px;
+  
 }
 
 .dropDown {
@@ -123,16 +126,42 @@ body {
   background-color: orange;
   border-radius: 5%;
   border:none;
-  height: 25px;
+  height: 45px;
+  width: 200px;
+  font-size: 2rem;
 }
 
 .city, .weather, .selectCity, .newWeather {
   color: black;
   font-family: 'Fjalla One', sans-serif;
+  font-weight: 900;
+}
+
+.selectCity {
+  font-size: 2rem;
+}
+
+.city {
+  width: 90%;
+  font-size: 2.8rem;
+  background-color: white;
+  color: rgb(227,70,70);
+  color: radial-gradient(circle, rgba(227,70,70,1) 0%, rgba(244,14,11,1) 0%, rgba(242,238,238,1) 65%);
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 10%;
+  padding-left: 50px;
+  margin-left: 20px;
+  margin-top: -5px;
+  text-align: center;
+  align-items: center;
+  border: 7px solid black;
+ 
 }
 
 .weather {
-  font-size: .9rem;  
+  font-size: 2rem;  
 }
 
 .all-border{
@@ -141,12 +170,38 @@ body {
 }
 
 .newWeather {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .display {
   color: #d81159;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 2rem;
 
+}
+
+.stylingDate {
+  display: flex;
+    flex-direction: column;
+    width: 10.5rem;
+    height: 10.5rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
 }

@@ -1,7 +1,8 @@
 const Header = () => {
     return (
         <header className="header">
-            <h1>The Local Weather App ⚡☁</h1>
+            <h1>The Local Weather App ⚡<span className="white">☁</span></h1>
+            
         </header>
     )
 }

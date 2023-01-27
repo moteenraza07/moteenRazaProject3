@@ -6,29 +6,31 @@ const DisplayInfo = (props) => {
    const formattedDate = dailyForecasts && new Date(dailyForecasts[0].Date).toISOString().split('T')[0];
    const tomorrowDate = tomorrowForecasts && new Date(tomorrowForecasts.EffectiveDate).toISOString().split('T')[0];
     return (
+
+        
         
         <section className="box">
-            <h2 className="city">{props.citySelection}</h2>
+            {/* <h2 className="city">{props.citySelection}</h2> */}
 
             {/*Info about today's weather */}
             {dailyForecasts &&
             <>
             
             <div className="date all-border">
-                <h3 className="weather">Today's date</h3>
-                <p className="display">{formattedDate}</p>
+                <h3 className="weather">Today's date for Weather</h3>
+                <p className="display stylingDate">{formattedDate}</p>
             </div>
             <div className="temp all-border">
-                <h3 className="weather">Temperature</h3>
-                <p className="display">{dailyForecasts[0].Temperature.Maximum.Value}°F</p>
+                <h3 className="weather">Today's Temperature</h3>
+                <p className="display stylingDate">{dailyForecasts[0].Temperature.Maximum.Value}°F</p>
             </div>
             <div className="day all-border">
                 <h3 className="weather">Daytime Weather</h3>
-                <p className="display">{dailyForecasts[0].Day.IconPhrase}</p>
+                <p className="display stylingDate">{dailyForecasts[0].Day.IconPhrase}</p>
             </div>
             <div className="night all-border">
-                <h3 className="weather">Night time Weather</h3> 
-                <p className="display">{dailyForecasts[0].Night.IconPhrase}</p>
+                <h3 className="weather">Nighttime Weather</h3> 
+                <p className="display stylingDate">{dailyForecasts[0].Night.IconPhrase}</p>
             </div>
             
             </>
@@ -38,16 +40,16 @@ const DisplayInfo = (props) => {
 
            <>
            <div className="date all-border">
-                <h3 className="newWeather">Tomorrow's Date</h3> 
-                <p className="display"> {tomorrowDate}</p>
+                <h3 className="newWeather">Upcoming Weather</h3> 
+                <p className="display stylingDate"> {tomorrowDate}</p>
             </div>
             <div className="date all-border">
-                {<p className="newWeather">Tomorrow's Weather</p> }
-                <p className="display">{props.weatherInfo.Headline.Category}</p>
+                {<p className="newWeather">Future Weather Update</p> }
+                <p className="display stylingDate">{props.weatherInfo.Headline.Category}</p>
            </div>
            <div className="date all-border">
-                {<p className="newWeather">Tomorrow's Weather</p> }
-                <p className="display"> {props.weatherInfo.Headline.Text}</p>
+                {<p className="newWeather">More Details on Weather</p> }
+                <p className="display stylingDate text"> {props.weatherInfo.Headline.Text}</p>
            </div>
            </>
 

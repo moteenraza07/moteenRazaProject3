@@ -1,5 +1,6 @@
 import DisplayInfo from './DisplayInfo';
 import CitySelection from './CitySelection';
+import DisplayCity from './DisplayCity';
 
 //1. import the useState and useEffect hooks from the react library
 import {useState} from 'react';
@@ -44,9 +45,6 @@ const callCity = (city) => {
 }
 
 
-
-
-
 const handleSubmit = (e) => {
     e.preventDefault();
     axios(
@@ -88,7 +86,10 @@ console.log(weatherInfo)
         
         <section>
             <CitySelection handleClick={handleClick} handleSubmit={handleSubmit} cityName={cityName}/>
+            <DisplayCity citySelection={cityName} weatherInfo = {weatherInfo} />
             <DisplayInfo citySelection={cityName} weatherInfo = {weatherInfo} />
+            
+
         </section>
 
     )
