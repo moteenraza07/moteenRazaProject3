@@ -47,13 +47,13 @@ body {
 
 .header {
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   
 }
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-  margin-left: 50rem;
+  margin-left: 40rem;
 }
 
 
@@ -70,7 +70,7 @@ h1 {
   cursor: pointer;
   display: flex;
   font-family:'Fjalla One', sans-serif; 
-  font-size: 3rem;
+  font-size: 2rem;
   height: 58px;
   justify-content: center;
   line-height: 24px;
@@ -84,7 +84,7 @@ h1 {
   touch-action: manipulation;
   left: 950px;
   bottom: 45px;
-  margin-left: 25rem;
+  margin-left: 6rem;
   bottom: 3.8rem;
 }
 
@@ -130,7 +130,7 @@ h1 {
 }
 
 .selectCity {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-left: 10rem;
   
 }
@@ -140,7 +140,7 @@ h1 {
   background-color: orange;
   border-radius: 5%;
   border:none;
-  height: 65px;
+  height: 55px;
   width: 200px;
   font-size: 2rem;
 }
@@ -205,13 +205,12 @@ h1 {
   border-radius: 12px;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  margin-left: 5rem;
+  margin-left: 2.5rem;
     
 }
 
 .text {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .white {
