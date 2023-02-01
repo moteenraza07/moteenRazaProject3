@@ -17,11 +17,11 @@ const DisplayInfo = (props) => {
             <>
             
             <div className="date all-border">
-                <h3 className="weather">Today's date for Weather</h3>
+                <h3 className="weather">Today's date</h3>
                 <p className="display stylingDate">{formattedDate}</p>
             </div>
             <div className="temp all-border">
-                <h3 className="weather">Today's Temperature</h3>
+                <h3 className="weather">Temperature</h3>
                 <p className="display stylingDate">{dailyForecasts[0].Temperature.Maximum.Value}°F</p>
             </div>
             <div className="day all-border">
@@ -40,15 +40,15 @@ const DisplayInfo = (props) => {
 
            <>
            <div className="date all-border">
-                <h3 className="newWeather">Upcoming Weather</h3> 
+                <h3 className="newWeather">New Weather Date</h3> 
                 <p className="display stylingDate"> {tomorrowDate}</p>
             </div>
             <div className="date all-border">
-                {<p className="newWeather">Future Weather Update</p> }
+                {<p className="newWeather">Upcoming Weather</p> }
                 <p className="display stylingDate">{props.weatherInfo.Headline.Category}</p>
            </div>
            <div className="date all-border">
-                {<p className="newWeather">More Details on Weather</p> }
+                {<p className="newWeather">Details on Weather</p> }
                 <p className="display stylingDate text"> {props.weatherInfo.Headline.Text}</p>
            </div>
            </>

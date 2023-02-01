@@ -1,4 +1,4 @@
-
+// create a component that will allow users to select different cities from the form provided below
 const CitySelection = ({handleSubmit, handleClick, cityName}) => {
     
     return (

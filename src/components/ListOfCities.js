@@ -38,13 +38,14 @@ const callCity = (city) => {
             }
 
         }).then((apiData) => {
+            // create a variable that will store the filtered array and then put it into the setCityKey function
             const info = apiData.data.filter(el => el.Country.ID === "CA" && el.AdministrativeArea.ID === "ON");
             setCityKey(info[0].Key);
            
         })
 }
 
-
+// use another axios that will retreive data back based on the city key selected
 const handleSubmit = (e) => {
     e.preventDefault();
     axios(
@@ -85,6 +86,7 @@ console.log(weatherInfo)
 
         
         <section>
+            {/* Parent component that will be used to pass down props*/}
             <CitySelection handleClick={handleClick} handleSubmit={handleSubmit} cityName={cityName}/>
             <DisplayCity citySelection={cityName} weatherInfo = {weatherInfo} />
             <DisplayInfo citySelection={cityName} weatherInfo = {weatherInfo} />

@@ -1,4 +1,4 @@
-
+// Root component
 import './App.css';
 import Header from './components/Header';
 import ListOfCities from './components/ListOfCities';
